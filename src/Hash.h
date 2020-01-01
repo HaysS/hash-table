@@ -4,6 +4,8 @@
 class Hash {
 public: 
 	int getHash();
+private:
+	int sumChars();
 };
 
 #endif
