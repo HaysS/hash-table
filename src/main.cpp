@@ -1,10 +1,13 @@
 #include <iostream>
 #include "Hash.h"
 
-int main() {
-	Hash hash;
+const int TABLE_SIZE = 10;
 
-	hash.getHash();
+int main() {
+	char str[] = "Hello World!";
+	
+	Hash hash;
+	hash.getHash(TABLE_SIZE, str, sizeof(str));
 
 	return 0;
 }

@@ -5,7 +5,7 @@ class Hash {
 public: 
 	int getHash();
 private:
-	int sumChars();
+	int sumChars(char str[], int size);
 };
 
 #endif

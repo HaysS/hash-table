@@ -1,21 +1,22 @@
 #include <iostream>
 #include "Hash.h"
 
-int Hash::getHash() {
-	char str[] = "Hello World!";
-	int testNum = 11;
 
+//Sums ASCII values of all characters in string to generate hash
+int Hash::sumChars(char *str, int strLength) {
 	int val = 0;
-	for (int i=0; i < sizeof(str); i++) {
+
+	for (int i = 0; i < strLength; i++) {
 		val += str[i];
 	}
 
-	std::cout << val;
-
-	return 0;
+	return val;	
 }
 
-// //Sums ASCII values of all characters in string
-// int Hash::sumChars() {
 
-// }
+int Hash::getHash(int tableSize, char *str, int strLength) {
+	int val = sumChars(str, strLength);
+
+	return val % TABLE_SIZE;
+}
+
