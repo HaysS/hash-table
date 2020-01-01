@@ -15,8 +15,8 @@ int Hash::sumChars(char *str, int strLength) {
 
 
 int Hash::getHash(int tableSize, char *str, int strLength) {
-	int val = sumChars(str, strLength);
+	int asciiSum = sumChars(str, strLength);
 
-	return val % TABLE_SIZE;
+	return asciiSum % tableSize;
 }
 
