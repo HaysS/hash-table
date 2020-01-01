@@ -1,6 +1,6 @@
 #include <iostream>
+#include "Hash.h"
 
 int main() {
-	char testString[] = "Hello World!";
-	std::cout << testString;
+
 }
