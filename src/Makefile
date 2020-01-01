@@ -2,5 +2,5 @@
 output: main.o Hash.o
 	g++ main.o Hash.o -o output
 
-clean:
+clear:
 	rm *.o output

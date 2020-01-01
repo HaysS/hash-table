@@ -7,7 +7,9 @@ int main() {
 	char str[] = "Hello World!";
 	
 	Hash hash;
-	hash.getHash(TABLE_SIZE, str, sizeof(str));
+	int hashVal = hash.getHash(TABLE_SIZE, str, sizeof(str));
+
+	std::cout << hashVal;
 
 	return 0;
 }
