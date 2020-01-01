@@ -1,5 +1,6 @@
 #include <iostream>
 
 int main() {
-	std::cout << "HelloWorld!";
+	char testString[] = "Hello World!";
+	std::cout << testString;
 }
