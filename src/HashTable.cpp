@@ -19,4 +19,3 @@ int HashTable::index(int tableSize, char *str, int size) {
 
 	return hash % tableSize;
 }
-
