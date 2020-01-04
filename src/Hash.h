@@ -3,9 +3,9 @@
 
 class Hash {
 public: 
-	int getHash(int tableSize, char *str, int size);
+	int index(int tableSize, char *str, int size);
 private:
-	int sumChars(char *str, int size);
+	int getHash(char *str, int size);
 };
 
 #endif

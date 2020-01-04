@@ -3,10 +3,10 @@
 
 
 //Sums ASCII values of all characters in string to generate hash
-int Hash::sumChars(char *str, int strLength) {
+int Hash::getHash(char *str, int size) {
 	int val = 0;
 
-	for (int i = 0; i < strLength; i++) {
+	for (int i = 0; i < size; i++) {
 		val += str[i];
 	}
 
@@ -14,9 +14,9 @@ int Hash::sumChars(char *str, int strLength) {
 }
 
 
-int Hash::getHash(int tableSize, char *str, int strLength) {
-	int asciiSum = sumChars(str, strLength);
+int Hash::index(int tableSize, char *str, int size) {
+	int hash = getHash(str, size);
 
-	return asciiSum % tableSize;
+	return hash % tableSize;
 }
 
