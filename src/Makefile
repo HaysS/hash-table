@@ -1,6 +1,6 @@
 
-output: main.o Hash.o
-	g++ main.o Hash.o -o output
+output: main.o HashTable.o
+	g++ main.o HashTable.o -o output
 
 clear:
 	rm *.o output
